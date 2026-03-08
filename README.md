@@ -26,7 +26,7 @@ Portfolio_Site/
 └── backend/
     ├── app/
     │   ├── main.py
-    │   ├── config.py         # env-based settings via pydantic-settings
+    │   ├── config.py  
     │   ├── database.py
     │   ├── models/
     │   ├── schemas/
