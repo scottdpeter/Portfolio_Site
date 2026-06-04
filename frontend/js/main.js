@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000/api";
+const FORMSPREE_URL = "https://formspree.io/f/xbdejawz";
 
 const form = document.querySelector(".contact-form");
 const btn = form.querySelector(".contact-btn");
@@ -18,9 +18,9 @@ form.addEventListener("submit", async (e) => {
   btn.textContent = "Sending...";
 
   try {
-    const res = await fetch(`${API_BASE}/contact/`, {
+    const res = await fetch(FORMSPREE_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify(payload),
     });
 
